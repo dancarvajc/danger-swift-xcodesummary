@@ -13,8 +13,7 @@ let package = Package(
         .library(name: "DangerDeps", type: .dynamic, targets: ["DangerDependencies"]) // dev
     ],
     dependencies: [
-        .package(url: "https://github.com/f-meloni/Rocket", from: "1.0.0"), // dev,
-        .package(url: "https://github.com/dancarvajc/danger-swift-coverage", .branch("master")), // dev
+        .package(url: "https://github.com/f-meloni/Rocket", from: "1.0.0"), // dev
     ],
     targets: [
         .target(name: "DangerDependencies",dependencies: ["Danger", "DangerXCodeSummary", "DangerSwiftCoverage"]), //dev
